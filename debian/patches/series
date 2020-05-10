@@ -5,3 +5,4 @@
 15-manpage-url.patch
 20-bin-spelling.patch
 25-fix-double-free.patch
+30-manpage-spelling.patch

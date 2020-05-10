@@ -7,7 +7,8 @@ glimpse (4.18.7-5.1) UNRELEASED; urgency=medium
     15-manpage-url, 20-bin-spelling, 25-fix-double-free.
   * Upgrade Standards-Version to 4.5.0 (no changes).
   * Remove debian/NEWS.Debian, since it's outdated and badly formatted.
-
+  * 30-manpage-spelling: Fix some typos in man pages.
+  
  -- Roland Rosenfeld <roland@debian.org>  Sun, 10 May 2020 18:26:24 +0200
 
 glimpse (4.18.7-5) unstable; urgency=medium
