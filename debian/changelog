@@ -5,6 +5,7 @@ glimpse (4.18.7-5.1) UNRELEASED; urgency=medium
   * Split agrep into separate package.
   * Import patches from standalone agrep package: 12-manpage-hyphen,
     15-manpage-url, 20-bin-spelling, 25-fix-double-free.
+  * Upgrade Standards-Version to 4.5.0 (no changes).
 
  -- Roland Rosenfeld <roland@debian.org>  Sun, 10 May 2020 18:26:24 +0200
 
