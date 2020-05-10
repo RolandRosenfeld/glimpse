@@ -3,6 +3,7 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 TARGETDIR=`pwd`/debian/glimpse
+AGREPDIR=`pwd`/debian/agrep
 
 override_dh_auto_configure:
 	autoconf
@@ -18,6 +19,10 @@ override_dh_auto_install:
 	install -g root -o root -m 0755 -d $(TARGETDIR)/usr/lib/glimpse
 	mv $(TARGETDIR)/usr/bin/buildcast $(TARGETDIR)/usr/bin/cast $(TARGETDIR)/usr/bin/uncast \
 	   $(TARGETDIR)/usr/bin/tbuild $(TARGETDIR)/usr/bin/wgconvert $(TARGETDIR)/usr/lib/glimpse
+
+#	move agrep to separate package:
+	mv $(TARGETDIR)/usr/bin/agrep $(AGREPDIR)/usr/bin/
+	mv $(TARGETDIR)/usr/share/man/man1/agrep.1 $(AGREPDIR)/usr/share/man/man1/
 
 %:
 	dh $@ --without autoreconf

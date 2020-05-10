@@ -10,8 +10,7 @@ Vcs-Browser: https://github.com/az143/glimpse
 
 Package: glimpse
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: agrep
+Depends: ${shlibs:Depends}, ${misc:Depends}, agrep (>= 4.18.7-5.1)
 Description: search quickly through entire file systems
  Glimpse, which stands for GLobal IMPlicit SEarch, is a very popular
  UNIX indexing and query system that allows you to search through a
@@ -19,3 +18,15 @@ Description: search quickly through entire file systems
  options (agrep is our powerful version of grep) including approximate
  matching (e.g., finding misspelled words), Boolean queries, and even
  some limited forms of regular expressions.
+
+Package: agrep
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: text search tool with support for approximate patterns
+ agrep is a version of standard grep with the following enhancements:
+ .
+  * the ability to search for approximate patterns
+  * it is record oriented rather than just line oriented
+  * multiple patterns with AND OR logic queries
+ .
+ This package contains glimpse's (4.x) last free version of agrep.
