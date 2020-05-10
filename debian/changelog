@@ -3,6 +3,8 @@ glimpse (4.18.7-5.1) UNRELEASED; urgency=medium
   * Non-maintainer upload.
   * Update debhelper to v13 and switch from classic debhelper to dh.
   * Split agrep into separate package.
+  * Import patches from standalone agrep package: 12-manpage-hyphen,
+    15-manpage-url, 20-bin-spelling, 25-fix-double-free.
 
  -- Roland Rosenfeld <roland@debian.org>  Sun, 10 May 2020 18:26:24 +0200
 
