@@ -8,6 +8,7 @@ glimpse (4.18.7-5.1) UNRELEASED; urgency=medium
   * Update debhelper to v13 and switch from classic debhelper to dh.
   * Upgrade Standards-Version to 4.5.0 (no changes).
   * Remove debian/NEWS.Debian, since it's outdated and badly formatted.
+  * 30-manpage-spelling: Fix some typos in man pages.
 
  -- Roland Rosenfeld <roland@debian.org>  Sat, 23 May 2020 14:50:56 +0200
 
