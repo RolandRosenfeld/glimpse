@@ -1,3 +1,10 @@
+glimpse (4.18.7-5.1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Provides & Replaces: agrep.
+
+ -- Roland Rosenfeld <roland@debian.org>  Sat, 23 May 2020 14:50:56 +0200
+
 glimpse (4.18.7-5) unstable; urgency=medium
 
   * minor adjustments to control and changelog
