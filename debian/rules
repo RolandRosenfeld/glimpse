@@ -34,6 +34,10 @@ install: build
 	mv $(TARGETDIR)/usr/bin/buildcast $(TARGETDIR)/usr/bin/cast $(TARGETDIR)/usr/bin/uncast \
 	$(TARGETDIR)/usr/bin/tbuild $(TARGETDIR)/usr/bin/wgconvert $(TARGETDIR)/usr/lib/glimpse
 
+#	install (and rename) agrep README:
+	install -g root -o root -m 0755 -d $(TARGETDIR)/usr/share/doc/glimpse
+	install -g root -o root -m 0644 agrep/README \
+		$(TARGETDIR)/usr/share/doc/glimpse/README.agrep
 
 clean:
 	dh_testdir

@@ -4,6 +4,7 @@ glimpse (4.18.7-5.1) UNRELEASED; urgency=medium
   * Provides & Replaces: agrep.
   * Import patches from standalone agrep package: 12-manpage-hyphen,
     15-manpage-url, 20-bin-spelling, 25-fix-double-free.
+  * Install some more agrep documentation.
 
  -- Roland Rosenfeld <roland@debian.org>  Sat, 23 May 2020 14:50:56 +0200
 
